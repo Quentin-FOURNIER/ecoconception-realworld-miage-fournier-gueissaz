@@ -1,4 +1,4 @@
-<div class="article-preview">
+<div class="article-preview animation"  >
   <app-article-meta [article]="article">
     <app-favorite-button
       [article]="article"
@@ -23,3 +23,24 @@
     </ul>
   </a>
 </div>
+<style>
+
+  .animation{
+  position: relative;
+  width: 200px; /* Ajustez la largeur selon vos besoins */
+  height: 200px; /* Ajustez la hauteur selon vos besoins */
+  border: 2px solid transparent;
+  border-radius: 10px; /* Ajustez le rayon de la bordure selon vos besoins */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1), 0 0 40px rgba(0, 255, 255, 1), 0 0 50px rgba(0, 255, 255, 1);
+  animation: rotateNeon 4s linear infinite; /* Ajustez la durée de l'animation selon vos besoins */
+}
+
+@keyframes rotateNeon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>

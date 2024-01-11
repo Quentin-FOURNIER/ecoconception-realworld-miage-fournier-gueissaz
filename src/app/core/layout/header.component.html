@@ -3,19 +3,19 @@
     <a class="navbar-brand" routerLink="/">conduit</a>
 
     <!-- Show this for logged out users -->
-    <ul *appShowAuthed="false" class="nav navbar-nav pull-xs-right">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/"> Home </a>
+    <ul *appShowAuthed="false" class="nav navbar-nav pull-xs-right ">
+      <li class="nav-item ">
+        <a class="nav-link animation-scale" routerLink="/"> Home </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" routerLink="/login" routerLinkActive="active">
+        <a class="nav-link animation-scale" routerLink="/login" routerLinkActive="active">
           Sign in
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" routerLink="/register" routerLinkActive="active">
+        <a class="nav-link animation-scale" routerLink="/register" routerLinkActive="active">
           Sign up
         </a>
       </li>
@@ -63,3 +63,10 @@
     </ul>
   </div>
 </nav>
+<style>
+
+
+  .animation-scale:hover {
+    transform: scale(5);
+  }
+</style>
