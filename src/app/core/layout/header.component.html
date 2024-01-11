@@ -36,13 +36,13 @@
 
       <li class="nav-item">
         <a class="nav-link" routerLink="/editor" routerLinkActive="active">
-          <i class="ion-compose"></i>&nbsp;New Article
+          <img src="https://static.vecteezy.com/system/resources/previews/026/306/129/original/pencil-icon-pen-write-writing-stationery-edit-editor-business-office-school-black-white-sign-symbol-illustration-artwork-graphic-clipart-eps-vector.jpg" style="height: 25px; width: 25px;">&nbsp;New Article
         </a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link" routerLink="/settings" routerLinkActive="active">
-          <i class="ion-gear-a"></i>&nbsp;Settings
+          <img src="https://static-00.iconduck.com/assets.00/settings-icon-1964x2048-8nigtrtt.png" style="height: 25px; width: 25px;">&nbsp;Settings
         </a>
       </li>
 
@@ -56,6 +56,7 @@
             [src]="currentUser.image"
             *ngIf="currentUser.image"
             class="user-pic"
+            
           />
           {{ currentUser.username }}
         </a>
